@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>แบบทดสอบก่อนเรียน</title>
+
+    <link
+        rel="stylesheet"
+        href="quiz.css"
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <style>
+
+        /* =========================================
+           หน้าล็อกอิน
+        ========================================= */
+
+        .login-screen {
+
+            position: fixed;
+
+            inset: 0;
+
+            z-index: 1000;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+
+        .login-box {
+
+            width: 520px;
+
+            padding: 45px 55px;
+
+            background: #fff7df;
+
+            border: 7px solid #8a5825;
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 10px 0 #5b3515,
+                0 20px 40px rgba(0,0,0,0.25);
+
+            text-align: center;
+
+        }
+
+
+        .login-title {
+
+            margin-bottom: 35px;
+
+            font-size: 38px;
+
+            font-weight: bold;
+
+            color: #4b2b14;
+
+            text-shadow:
+                2px 2px #e2b36a;
+
+        }
+
+
+        .login-field {
+
+            margin-bottom: 22px;
+
+            text-align: left;
+
+        }
+
+
+        .login-field label {
+
+            display: block;
+
+            margin-bottom: 8px;
+
+            font-size: 23px;
+
+            font-weight: bold;
+
+            color: #4b2b14;
+
+        }
+
+
+        .login-field input,
+        .login-field select {
+
+            width: 100%;
+
+            height: 58px;
+
+            padding: 8px 15px;
+
+            border: 3px solid #8a5825;
+
+            border-radius: 15px;
+
+            background: white;
+
+            font-family: 'Mali', sans-serif;
+
+            font-size: 22px;
+
+            text-align: center;
+
+            outline: none;
+
+        }
+
+
+        .login-field input:focus,
+        .login-field select:focus {
+
+            border-color: #4caf50;
+
+        }
+
+
+        .start-btn {
+
+            width: 100%;
+
+            height: 65px;
+
+            margin-top: 15px;
+
+            border: 4px solid #8a5825;
+
+            border-radius: 18px;
+
+            background: #65c466;
+
+            color: white;
+
+            font-family: 'Mali', sans-serif;
+
+            font-size: 25px;
+
+            font-weight: bold;
+
+            cursor: pointer;
+
+            box-shadow: 0 6px 0 #397d3b;
+
+            transition: 0.15s;
+
+        }
+
+
+        .start-btn:hover {
+
+            transform: translateY(-2px);
+
+            box-shadow: 0 8px 0 #397d3b;
+
+        }
+
+
+        .start-btn:active {
+
+            transform: translateY(4px);
+
+            box-shadow: 0 2px 0 #397d3b;
+
+        }
+
+
+        .login-error {
+
+            display: none;
+
+            margin-top: 15px;
+
+            color: #d32f2f;
+
+            font-size: 18px;
+
+            font-weight: bold;
+
+        }
+
+
+        /* =========================================
+           หน้าข้อสอบ
+        ========================================= */
+
+        #quizScreen {
+
+            display: none;
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         พื้นหลัง
+    ========================================= -->
+
+    <img
+        src="images/background.png"
+        class="background"
+        alt=""
+    >
+
+
+    <!-- =========================================
+         หน้าเลือกข้อมูลนักเรียน
+    ========================================= -->
+
+    <div
+        id="loginScreen"
+        class="login-screen"
+    >
+
+        <div class="login-box">
+
+
+            <div class="login-title">
+                แบบทดสอบก่อนเรียน
+            </div>
+
+
+            <!-- เลขที่ -->
+
+            <div class="login-field">
+
+                <label for="numberInput">
+                    เลขที่
+                </label>
+
+                <input
+                    type="number"
+                    id="numberInput"
+                    placeholder="กรอกเลขที่"
+                    min="1"
+                    max="50"
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- ชั้น -->
+
+            <div class="login-field">
+
+                <label for="classInput">
+                    ชั้น
+                </label>
+
+                <select id="classInput">
+
+                    <option value="">
+                        เลือกชั้น
+                    </option>
+
+                    <option value="ป.3/1">
+                        ป.3/1
+                    </option>
+
+                    <option value="ป.3/2">
+                        ป.3/2
+                    </option>
+
+                    <option value="ป.3/3">
+                        ป.3/3
+                    </option>
+
+                    <option value="ป.3/4">
+                        ป.3/4
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- ปุ่มเริ่ม -->
+
+            <button
+                type="button"
+                id="startQuizBtn"
+                class="start-btn"
+            >
+                เริ่มทำแบบทดสอบ
+            </button>
+
+
+            <div
+                id="loginError"
+                class="login-error"
+            >
+                กรุณากรอกเลขที่และเลือกชั้น
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =========================================
+         หน้าข้อสอบ
+    ========================================= -->
+
+    <div
+        id="quizScreen"
+    >
+
+
+        <!-- แถบความคืบหน้า -->
+
+        <div class="progress-bar">
+
+            <div class="progress-fill"></div>
+
+        </div>
+
+
+        <!-- ตัวจับเวลา -->
+
+        <div class="timer-box">
+
+            <img
+                src="images/timer_board.png"
+                class="timer-image"
+                alt=""
+            >
+
+            <div class="timer-text">
+                05:00
+            </div>
+
+        </div>
+
+
+        <!-- กรอบคำถาม -->
+
+        <div class="question-frame">
+
+            <img
+                src="images/frame.png"
+                class="frame-image"
+                alt=""
+            >
+
+
+            <div class="frame-title">
+                ข้อที่ 1 / 15
+            </div>
+
+
+            <div class="question-title">
+                จงหาปุ่ม <span>"ร"</span> บนแป้นพิมพ์
+            </div>
+
+
+            <div class="question-subtitle">
+                ค้นหาปุ่ม แล้วพิมพ์ตัวอักษรลงในช่องคำตอบ
+            </div>
+
+
+            <img
+                src="images/keyboard_q1.png"
+                class="keyboard-image"
+                alt=""
+            >
+
+
+            <!-- ช่องคำตอบ -->
+
+            <div
+                class="answer-area"
+                id="answerArea"
+            >
+
+                <input
+                    type="text"
+                    id="answerInput"
+                    placeholder="พิมพ์คำตอบ...."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <!-- ช้อยส์ -->
+
+            <div
+                class="choice-area"
+                id="choiceArea"
+            ></div>
+
+
+            <!-- ปุ่มส่งคำตอบ -->
+
+            <button
+                class="submit-btn"
+                type="button"
+            >
+
+                <img
+                    src="images/btn_submit.png"
+                    alt=""
+                >
+
+                <span>
+                    ส่งคำตอบ
+                </span>
+
+            </button>
+
+
+        </div>
+
+
+        <!-- Popup -->
+
+        <div
+            id="popupMessage"
+            class="popup-message"
+        >
+            ตอบถูกต้อง
+        </div>
+
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

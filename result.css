@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mali', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* =======================
+   พื้นหลัง
+======================= */
+
+.background {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    left: 0;
+    top: 0;
+
+    z-index: -1;
+}
+
+
+/* =======================
+   กรอบผลคะแนน
+======================= */
+
+.result-frame {
+    position: absolute;
+
+    left: 50%;
+    top: -140px;
+
+    transform: translateX(-50%);
+
+    width: 1900px;
+}
+
+
+/* =======================
+   รูปกรอบ
+======================= */
+
+.frame-image {
+    width: 100%;
+    display: block;
+}
+
+
+/* =======================
+   หัวข้อ
+======================= */
+
+.result-title {
+    position: absolute;
+
+    top: 350px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 900px;
+
+    text-align: center;
+
+    font-size: 42px;
+
+    font-weight: bold;
+
+    color: #4b2b14;
+}
+
+
+/* =======================
+   คะแนน
+======================= */
+
+.score-title {
+    position: absolute;
+
+    top: 430px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 500px;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #4b2b14;
+}
+
+.score-value {
+    position: absolute;
+
+    top: 475px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 500px;
+
+    text-align: center;
+
+    font-size: 55px;
+
+    font-weight: bold;
+
+    color: #d84134;
+}
+
+
+/* =======================
+   เวลา
+======================= */
+
+.time-title {
+    position: absolute;
+
+    top: 565px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 500px;
+
+    text-align: center;
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #4b2b14;
+}
+
+.time-value {
+    position: absolute;
+
+    top: 610px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 500px;
+
+    text-align: center;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    color: #4b2b14;
+}
+
+
+/* =======================
+   ข้อความ
+======================= */
+
+.result-message {
+    position: absolute;
+
+    top: 690px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    width: 800px;
+
+    text-align: center;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #4b2b14;
+}

@@ -1,0 +1,225 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Mali',sans-serif;
+}
+
+body{
+
+    width:100vw;
+    height:100vh;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+/* ==========================
+      พื้นหลัง
+========================== */
+
+.background{
+
+    position:absolute;
+
+    inset:0;
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-1;
+
+}
+
+
+/* ==========================
+      ป้ายหัวข้อ
+========================== */
+
+.title-box{
+
+    position:absolute;
+
+    top:-15px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:680px;
+
+}
+
+.title-image{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.login-title{
+
+    position:absolute;
+
+    left:52%;
+
+    top:56%;
+
+    transform:translate(-50%,-50%);
+
+    width:85%;
+
+    text-align:center;
+
+    line-height:1.45;
+
+    font-size:45px;
+
+    font-weight:700;
+
+    color:#FFF7D8;
+
+    text-shadow:
+        2px 2px 0 #5B3515,
+       -2px -2px 0 #5B3515,
+        2px -2px 0 #5B3515,
+       -2px 2px 0 #5B3515;
+
+}
+
+
+/* ==========================
+      กล่องข้อมูล
+========================== */
+
+.login-box{
+
+    position:absolute;
+
+    top:340px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.login-box label{
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    color:#FFF7D8;
+
+    text-shadow:
+        2px 2px 0 #5B3515,
+       -2px -2px 0 #5B3515,
+        2px -2px 0 #5B3515,
+       -2px 2px 0 #5B3515;
+
+}
+
+.login-box input,
+.login-box select{
+
+    width:540px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:0 20px;
+
+    font-size:22px;
+
+    text-align:center;
+
+    outline:none;
+
+}
+
+
+/* ==========================
+      ปุ่มเริ่ม
+========================== */
+
+.start-btn{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-30px;
+
+    transform:translateX(-50%);
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+}
+
+.start-btn img{
+
+    width:320px;
+
+    display:block;
+
+}
+
+.start-btn span{
+
+    position:absolute;
+
+    left:60%;
+
+    top:45%;
+
+    transform:translate(-50%,-50%);
+
+    color:#FFF7D8;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    white-space:nowrap;
+
+    text-shadow:
+        2px 2px 0 #5B3515,
+       -2px -2px 0 #5B3515,
+        2px -2px 0 #5B3515,
+       -2px 2px 0 #5B3515;
+
+}
+
+.start-btn:hover{
+
+    transform:translateX(-50%) scale(1.05);
+
+}
+
+.start-btn:active{
+
+    transform:translateX(-50%) scale(.96);
+
+}

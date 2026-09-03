@@ -1,0 +1,107 @@
+  <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>แบบทดสอบก่อนเรียน</title>
+
+    <link rel="stylesheet" href="quiz.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- พื้นหลัง -->
+    <img src="images/background.png" class="background">
+
+    <!-- แถบความคืบหน้า -->
+    <div class="progress-bar">
+
+        <div class="progress-fill"></div>
+
+    </div>
+
+    <!-- ตัวจับเวลา -->
+    <div class="timer-box">
+
+        <img src="images/timer_board.png" class="timer-image">
+
+        <div class="timer-text">
+
+            00:00
+
+        </div>
+
+    </div>
+
+    <!-- กรอบคำถาม -->
+    <div class="question-frame">
+
+        <img src="images/frame.png" class="frame-image">
+
+        <!-- ข้อที่ -->
+        <div class="frame-title">
+
+            ข้อที่ 1 / 15
+
+        </div>
+
+        <!-- โจทย์ -->
+        <div class="question-title">
+
+            จงหาปุ่ม <span>"ก"</span> บนแป้นพิมพ์
+
+        </div>
+
+        <!-- คำอธิบาย -->
+        <div class="question-subtitle">
+
+            ค้นหาตำแหน่งปุ่มบนแป้นพิมพ์ แล้วพิมพ์คำตอบลงในช่องด้านล่าง
+
+        </div>
+
+        <!-- รูปคีย์บอร์ด -->
+        <img src="images/keyboard_q1.png" class="keyboard-image">
+
+        <!-- ช่องพิมพ์คำตอบ -->
+<!-- ช่องพิมพ์คำตอบ -->
+<div class="answer-area" id="answerArea">
+    <input
+        type="text"
+        id="answerInput"
+        placeholder="พิมพ์คำตอบ...."
+        autocomplete="off"
+        maxlength="1"
+    >
+</div>
+
+<!-- ช้อยส์ 3 ตัวเลือก -->
+<div class="choice-area" id="choiceArea"></div>
+
+        <!-- ปุ่มส่ง -->
+        <button class="submit-btn">
+
+            <img src="images/btn_submit.png">
+
+            <span>
+
+                ส่งคำตอบ
+
+            </span>
+
+        </button>
+
+    </div>
+
+    <div id="popupMessage" class="popup-message">
+
+    ตอบถูกต้อง
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

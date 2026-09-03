@@ -1,0 +1,548 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Mali',sans-serif;
+}
+
+body{
+
+    overflow:hidden;
+    width:100vw;
+    height:100vh;
+    position:relative;
+
+}
+
+/* ========================= */
+/* พื้นหลัง */
+/* ========================= */
+
+.background{
+
+    position:absolute;
+
+    left:0;
+    top:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+
+    z-index:-1;
+
+}
+
+/* ========================= */
+/* ป้ายหัวข้อ */
+/* ========================= */
+
+.title-box{
+
+    position:absolute;
+
+    top:-25px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:500px;
+
+}
+
+.login-title{
+
+    position:absolute;
+
+    left:50%;
+    top:65%;
+
+    transform:translate(-50%,-50%);
+
+    width:85%;
+
+    text-align:center;
+
+    line-height:1.15;
+
+    font-size:46px;
+
+    font-weight:700;
+
+    color:#FFF7D8;
+
+    text-shadow:
+        2px 2px 0 #5B3515,
+       -2px -2px 0 #5B3515,
+        2px -2px 0 #5B3515,
+       -2px 2px 0 #5B3515,
+        0 2px 4px rgba(0,0,0,.25);
+
+}
+
+/* ========================= */
+/* เลขที่ */
+/* ========================= */
+
+.student-section{
+
+    position:absolute;
+
+    top:320px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    text-align:center;
+
+}
+
+.label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    color:#FFF7D8;
+
+    text-shadow:
+        2px 2px 0 #5B3515,
+       -2px -2px 0 #5B3515,
+        2px -2px 0 #5B3515,
+       -2px 2px 0 #5B3515;
+
+}
+
+input{
+
+    width:500px;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:18px;
+
+    outline:none;
+
+    font-size:26px;
+
+    text-align:center;
+
+}
+
+/* ========================= */
+/* ชั้นเรียน */
+/* ========================= */
+
+.class-section{
+
+    position:absolute;
+
+    top:465px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    text-align:center;
+
+}
+
+select{
+
+    width:500px;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:18px;
+
+    outline:none;
+
+    font-size:26px;
+
+    text-align:center;
+
+}
+
+/* ========================= */
+/* ปุ่มเริ่ม */
+/* ========================= */
+
+#startButton{
+
+    position:absolute;
+
+    left:60%;
+
+    top:565px;
+
+    transform:translateX(-50%);
+
+    width:470px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+#startButton img{
+
+    width:70%;
+
+    display:block;
+
+}
+
+#startButton span{
+
+    position:absolute;
+
+    left:41%;
+
+    top:45%;
+
+    transform:translate(-50%,-50%);
+
+    width:500px;
+
+    text-align:center;
+
+    white-space:nowrap;
+
+    color:#FFF7D8;
+
+    font-size:22px;
+
+    font-weight:700;
+
+    text-shadow:
+        2px 2px 0 #5B3515,
+       -2px -2px 0 #5B3515,
+        2px -2px 0 #5B3515,
+       -2px 2px 0 #5B3515;
+
+}
+
+#startButton:hover{
+
+    transform:translateX(-50%) scale(1.05);
+
+}
+
+
+/* ===========================================
+                QUIZ PAGE
+=========================================== */
+
+.quiz-container{
+    width:100%;
+    height:100vh;
+
+    background:url("images/background.png") center center;
+    background-size:cover;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+    overflow:hidden;
+}
+
+
+/* ---------- ป้ายหัวข้อ ---------- */
+
+.title-board{
+
+    position:relative;
+
+    width:620px;
+
+    margin-top:25px;
+
+}
+
+.title-board img{
+
+    width:100%;
+    display:block;
+
+}
+
+.title-text{
+
+    position:absolute;
+
+    top:48%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    color:#ffffff;
+
+    font-size:54px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    line-height:1.15;
+
+    -webkit-text-stroke:4px #5b3313;
+
+    paint-order:stroke fill;
+
+}
+
+
+/* ---------- Progress ---------- */
+
+.progress-section{
+
+    width:620px;
+
+    margin-top:18px;
+
+}
+
+.progress-bar{
+
+    width:100%;
+
+    height:18px;
+
+    background:#ddd;
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+}
+
+.progress-fill{
+
+    width:10%;
+
+    height:100%;
+
+    background:#69c14d;
+
+    border-radius:30px;
+
+}
+
+
+/* ---------- Timer ---------- */
+
+.timer{
+
+    position:absolute;
+
+    top:40px;
+
+    right:70px;
+
+    width:230px;
+
+}
+
+.timer img{
+
+    width:100%;
+
+}
+
+#timer-text{
+
+    position:absolute;
+
+    top:48%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    color:white;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    -webkit-text-stroke:3px #4b2d17;
+
+}
+
+
+/* ---------- กรอบโจทย์ ---------- */
+
+.question-frame{
+
+    position:relative;
+
+    width:1180px;
+
+    margin-top:20px;
+
+}
+
+.frame{
+
+    width:100%;
+
+    display:block;
+
+}
+
+.question-content{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+/* ---------- โจทย์ ---------- */
+
+#question-title{
+
+    margin-top:60px;
+
+    font-size:42px;
+
+    color:#4d2f1c;
+
+    text-align:center;
+
+}
+
+
+/* ---------- รูปคีย์บอร์ด ---------- */
+
+.keyboard{
+
+    width:1000px;
+
+    margin-top:20px;
+
+}
+
+
+/* ---------- ตัวเลือก ---------- */
+
+.choices{
+
+    margin-top:35px;
+
+    width:80%;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:28px 100px;
+
+}
+
+.choices label{
+
+    display:flex;
+
+    align-items:center;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    color:#3c2b1e;
+
+}
+
+.choices input{
+
+    width:28px;
+
+    height:28px;
+
+    margin-right:18px;
+
+}
+
+
+/* ---------- ปุ่มส่ง ---------- */
+
+.submit-btn{
+
+    position:relative;
+
+    margin-top:25px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+}
+
+.submit-btn img{
+
+    width:420px;
+
+}
+
+.submit-btn span{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    color:white;
+
+    font-size:42px;
+
+    font-weight:bold;
+
+    white-space:nowrap;
+
+    -webkit-text-stroke:3px #4a2b16;
+
+}
+
+
+/* ---------- Hover ---------- */
+
+.submit-btn:hover{
+
+    transform:scale(1.05);
+
+    transition:.2s;
+
+}
+
+.submit-btn:active{
+
+    transform:scale(.95);
+
+}
