@@ -172,35 +172,20 @@ body {
 ======================= */
 
 .frame-title {
-
     position: absolute;
-
-    top: 195px;
-
+    top: 250px;
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 260px;
-
     text-align: center;
-
     font-size: 38px;
-
     font-weight: bold;
-
     color: #fbfbfa;
-
     text-shadow:
-
         2px 2px #5B3515,
-
         -2px -2px #5B3515,
-
         2px -2px #5B3515,
-
         -2px 2px #5B3515;
-
 }
 
 
@@ -209,31 +194,19 @@ body {
 ======================= */
 
 .question-title {
-
     position: absolute;
-
-    top: 320px;
-
+    top: 335px;
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 900px;
-
     text-align: center;
-
     font-size: 34px;
-
     font-weight: bold;
-
     color: #4b2b14;
-
 }
 
 .question-title span {
-
     color: #d84134;
-
 }
 
 
@@ -242,23 +215,14 @@ body {
 ======================= */
 
 .question-subtitle {
-
     position: absolute;
-
-    top: 375px;
-
+    top: 388px;
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 700px;
-
     text-align: center;
-
     font-size: 28px;
-
     color: #4b2b14;
-
 }
 
 
@@ -267,17 +231,11 @@ body {
 ======================= */
 
 .keyboard-image {
-
     position: absolute;
-
-    top: 430px;
-
+    top: 470px;
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 750px;
-
 }
 
 
@@ -286,24 +244,16 @@ body {
 ================================================== */
 
 .answer-area {
-
     position: absolute;
-
-    top: 670px;
-
+    top: 750px;
     left: 50%;
-
     transform: translateX(-50%);
-
     width: 100%;
-
     display: flex;
-
     justify-content: center;
-
     z-index: 20;
-
 }
+
 
 #answerInput {
 
@@ -459,23 +409,14 @@ body {
 ======================= */
 
 .submit-btn {
-
     position: absolute;
-
-    bottom: 55px;
-
+    top: 830px;
     left: 50%;
-
     transform: translateX(-50%);
-
     border: none;
-
     background: none;
-
     cursor: pointer;
-
     z-index: 30;
-
 }
 
 .submit-btn img {
