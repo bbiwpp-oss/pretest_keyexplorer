@@ -186,7 +186,7 @@ body {
 .question-title {
     position: absolute;
 
-    top: 30.2vh;
+    top: 40vh;
     left: 50%;
 
     transform: translateX(-50%);
@@ -216,7 +216,7 @@ body {
 .question-subtitle {
     position: absolute;
 
-    top: 34.5vh;
+    top: 45vh;
     left: 50%;
 
     transform: translateX(-50%);
