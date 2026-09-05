@@ -231,17 +231,11 @@ body {
 ======================= */
 
 .keyboard-image {
-
-    position: absolute;
-
-    top: 250px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
+    position: absolute !important;
+    top: 400px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
     width: 750px;
-
     z-index: 10;
 }
 
@@ -251,21 +245,13 @@ body {
 ================================================== */
 
 .answer-area {
-
-    position: absolute;
-
-    top: 600px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
+    position: absolute !important;
+    top: 600px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
     width: 100%;
-
     display: flex;
-
     justify-content: center;
-
     z-index: 20;
 }
 
@@ -420,10 +406,10 @@ body {
 ======================= */
 
 .submit-btn {
-    position: absolute;
-    top: 600px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: absolute !important;
+    top: 770px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
     border: none;
     background: none;
     cursor: pointer;
