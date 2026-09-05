@@ -231,11 +231,18 @@ body {
 ======================= */
 
 .keyboard-image {
+
     position: absolute;
-    top: 150px;
+
+    top: 390px;
+
     left: 50%;
+
     transform: translateX(-50%);
+
     width: 750px;
+
+    z-index: 10;
 }
 
 
@@ -244,20 +251,27 @@ body {
 ================================================== */
 
 .answer-area {
+
     position: absolute;
-    top: 430px;
+
+    top: 680px;
+
     left: 50%;
+
     transform: translateX(-50%);
+
     width: 100%;
+
     display: flex;
+
     justify-content: center;
+
     z-index: 20;
 }
 
-
 #answerInput {
 
-    width: 280px;
+    width: 300px;
 
     height: 65px;
 
@@ -276,7 +290,6 @@ body {
     outline: none;
 
     box-sizing: border-box;
-
 }
 
 #answerInput:focus {
@@ -284,9 +297,7 @@ body {
     border-color: #342500;
 
     box-shadow:
-
         0 0 0 4px rgba(139, 92, 246, 0.15);
-
 }
 
 #answerInput::placeholder {
@@ -294,8 +305,8 @@ body {
     font-size: 18px;
 
     color: #999;
-
 }
+
 
 
 /* ==================================================
