@@ -242,7 +242,7 @@ body {
 .keyboard-image {
     position: absolute;
 
-    top: 55vh;
+    top: 100vh;
     left: 50%;
 
     transform: translateX(-50%);
