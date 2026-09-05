@@ -202,7 +202,7 @@ body {
 .keyboard-image {
     position: absolute !important;
 
-    top: 550px !important;
+    top: 200px !important;
     left: 50% !important;
 
     transform: translateX(-50%) !important;
