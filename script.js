@@ -939,9 +939,6 @@ function sendResultToGoogleSheet(
 // เริ่มแบบทดสอบ
 // ======================================================
 
-loadQuestion();
-
-startTimer();
 
 // ============================================
 // ระบบเลือกชั้น + เลขที่
@@ -1023,5 +1020,22 @@ function startQuiz() {
     loadQuestion();
 
     startTimer();
+
+  // ซ่อนหน้าล็อกอิน
+loginScreen.style.display = "none";
+
+// แสดงหน้าข้อสอบ
+quizScreen.style.display = "block";
+
+// รีเซ็ตข้อสอบ
+time = TOTAL_TIME;
+timeUsed = 0;
+quizFinished = false;
+currentQuestion = 0;
+score = 0;
+
+// เริ่มข้อสอบ
+loadQuestion();
+startTimer();
 
 }
