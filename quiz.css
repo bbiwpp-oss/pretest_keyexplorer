@@ -234,7 +234,7 @@ body {
 
     position: absolute;
 
-    top: 30px;
+    top: 40px;
 
     left: 50%;
 
@@ -421,7 +421,7 @@ body {
 
 .submit-btn {
     position: absolute;
-    top: 550px;
+    top: 320px;
     left: 50%;
     transform: translateX(-50%);
     border: none;
