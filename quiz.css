@@ -200,17 +200,17 @@ body {
 ================================================== */
 
 .keyboard-image {
-    position: absolute;
+    position: absolute !important;
 
-    top: -140px;
-    left: 50%;
+    top: 300px !important;
+    left: 50% !important;
 
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
 
-    width: 750px;
-    height: auto;
+    width: 750px !important;
+    height: auto !important;
 
-    z-index: 10;
+    z-index: 10 !important;
 }
 
 
