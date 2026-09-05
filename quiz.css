@@ -22,9 +22,10 @@ body {
 
 }
 
-
 /* =======================
+
    พื้นหลัง
+
 ======================= */
 
 .background {
@@ -45,9 +46,10 @@ body {
 
 }
 
-
 /* =======================
+
    Progress
+
 ======================= */
 
 .progress-bar {
@@ -86,9 +88,10 @@ body {
 
 }
 
-
 /* =======================
+
    Timer
+
 ======================= */
 
 .timer-box {
@@ -139,9 +142,10 @@ body {
 
 }
 
-
 /* =======================
+
    กรอบคำถาม
+
 ======================= */
 
 .question-frame {
@@ -166,93 +170,150 @@ body {
 
 }
 
-
 /* =======================
+
    ข้อที่
+
 ======================= */
 
 .frame-title {
+
     position: absolute;
+
     top: 250px;
+
     left: 50%;
+
     transform: translateX(-50%);
+
     width: 260px;
+
     text-align: center;
+
     font-size: 38px;
+
     font-weight: bold;
+
     color: #fbfbfa;
+
     text-shadow:
+
         2px 2px #5B3515,
+
         -2px -2px #5B3515,
+
         2px -2px #5B3515,
+
         -2px 2px #5B3515;
+
 }
 
-
 /* =======================
+
    โจทย์
+
 ======================= */
 
 .question-title {
+
     position: absolute;
-    top: 335px;
+
+    top: 280px;
+
     left: 50%;
+
     transform: translateX(-50%);
+
     width: 900px;
+
     text-align: center;
+
     font-size: 34px;
+
     font-weight: bold;
+
     color: #4b2b14;
+
 }
 
 .question-title span {
+
     color: #d84134;
+
 }
 
-
 /* =======================
+
    คำอธิบาย
+
 ======================= */
 
 .question-subtitle {
+
     position: absolute;
-    top: 388px;
+
+    top: 360px;
+
     left: 50%;
+
     transform: translateX(-50%);
+
     width: 700px;
+
     text-align: center;
+
     font-size: 28px;
+
     color: #4b2b14;
+
 }
 
-
 /* =======================
+
    Keyboard
+
 ======================= */
 
 .keyboard-image {
-    position: absolute !important;
-    top: 450px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+
+    position: absolute;
+
+    top: 250px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
     width: 750px;
+
     z-index: 10;
+
 }
 
-
 /* ==================================================
+
    กล่องพิมพ์คำตอบ
+
 ================================================== */
 
 .answer-area {
-    position: absolute !important;
-    top: 650px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+
+    position: absolute;
+
+    top: 600px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
     width: 100%;
+
     display: flex;
+
     justify-content: center;
+
     z-index: 20;
+
 }
 
 #answerInput {
@@ -276,6 +337,7 @@ body {
     outline: none;
 
     box-sizing: border-box;
+
 }
 
 #answerInput:focus {
@@ -283,7 +345,9 @@ body {
     border-color: #342500;
 
     box-shadow:
+
         0 0 0 4px rgba(139, 92, 246, 0.15);
+
 }
 
 #answerInput::placeholder {
@@ -291,12 +355,13 @@ body {
     font-size: 18px;
 
     color: #999;
+
 }
 
-
-
 /* ==================================================
+
    ช้อยส์ 3 ตัวเลือก
+
 ================================================== */
 
 .choice-area {
@@ -323,9 +388,10 @@ body {
 
 }
 
-
 /* =======================
+
    ปุ่มช้อยส์
+
 ======================= */
 
 .choice-btn {
@@ -366,7 +432,6 @@ body {
 
 }
 
-
 /* ตอนชี้ */
 
 .choice-btn:hover {
@@ -380,7 +445,6 @@ body {
         0 9px 0 #6e421d;
 
 }
-
 
 /* ตอนเลือก */
 
@@ -400,20 +464,30 @@ body {
 
 }
 
-
 /* =======================
+
    ปุ่มส่ง
+
 ======================= */
 
 .submit-btn {
-    position: absolute !important;
-    top: 810px !important;
-    left: 50% !important;
-    transform: translateX(-50%) !important;
+
+    position: absolute;
+
+    top: 600px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
     border: none;
+
     background: none;
+
     cursor: pointer;
+
     z-index: 30;
+
 }
 
 .submit-btn img {
@@ -454,7 +528,6 @@ body {
 
 }
 
-
 /* ปุ่มส่งถูกปิด */
 
 .submit-btn:disabled {
@@ -465,9 +538,10 @@ body {
 
 }
 
-
 /* =======================
+
    Popup
+
 ======================= */
 
 .popup-message {
@@ -540,9 +614,10 @@ body {
 
 }
 
-
 /* ==================================================
+
    Google Sites
+
 ================================================== */
 
 @media (max-width: 1200px) {
@@ -583,9 +658,10 @@ body {
 
 }
 
-
 /* =======================
+
    หน้าจอเล็ก
+
 ======================= */
 
 @media (max-width: 800px) {
