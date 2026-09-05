@@ -6,7 +6,7 @@
 // Google Apps Script
 // ===============================
 const SCRIPT_URL =
-    "https://script.google.com/macros/s/AKfycbzFDjvVyxmArAkoRX27WOfJCjHcDQmlMaI5nQ6Ev-rlzi4awL7ooGG-pUdKD2t7lk6tSA/exec";
+    "https://script.google.com/macros/s/AKfycbzFDjvVyxmArAkoRX27WOfJCJHcDQmlMaI5nQ6Ev-rlzi4awL7ooGG-pUdKD2t7lk6tSA/exec";
 
 
 // ===============================
@@ -938,7 +938,9 @@ function sendResultToGoogleSheet(
 // ======================================================
 // เริ่มแบบทดสอบ
 // ======================================================
+;
 
+// ยังไม่เริ่ม Timer จนกว่าจะกรอกเลขที่และเลือกชั้น
 
 // ============================================
 // ระบบเลือกชั้น + เลขที่
@@ -1020,22 +1022,5 @@ function startQuiz() {
     loadQuestion();
 
     startTimer();
-
-  // ซ่อนหน้าล็อกอิน
-loginScreen.style.display = "none";
-
-// แสดงหน้าข้อสอบ
-quizScreen.style.display = "block";
-
-// รีเซ็ตข้อสอบ
-time = TOTAL_TIME;
-timeUsed = 0;
-quizFinished = false;
-currentQuestion = 0;
-score = 0;
-
-// เริ่มข้อสอบ
-loadQuestion();
-startTimer();
 
 }
