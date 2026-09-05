@@ -195,7 +195,7 @@ body {
 
 .question-title {
     position: absolute;
-    top: 280px;
+    top: 335px;
     left: 50%;
     transform: translateX(-50%);
     width: 900px;
@@ -216,7 +216,7 @@ body {
 
 .question-subtitle {
     position: absolute;
-    top: 360px;
+    top: 388px;
     left: 50%;
     transform: translateX(-50%);
     width: 700px;
@@ -232,7 +232,7 @@ body {
 
 .keyboard-image {
     position: absolute !important;
-    top: 400px !important;
+    top: 450px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     width: 750px;
@@ -246,7 +246,7 @@ body {
 
 .answer-area {
     position: absolute !important;
-    top: 600px !important;
+    top: 650px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     width: 100%;
@@ -407,7 +407,7 @@ body {
 
 .submit-btn {
     position: absolute !important;
-    top: 770px !important;
+    top: 810px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
     border: none;
